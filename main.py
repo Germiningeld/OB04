@@ -1,7 +1,13 @@
 from abc import ABC, abstractmethod
 
 class Fighter():
-    pass
+
+    def __init__(self, weapon):
+        self.weapon = weapon
+
+    def change_weapon(self, new_weapon):
+        self.weapon = new_weapon
+
 
 class Monster():
     pass
@@ -20,4 +26,3 @@ class Bow(Weapon):
 
     def attack(self):
         pass
-    
